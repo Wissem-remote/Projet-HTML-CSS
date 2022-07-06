@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+h1{
+    font-weight:bold;
+    font-size:5vh;
+    color:#1B57A6;
+    font-style:italic;
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.26);
+}
+
+h1 span{
+    color:#9BDAF2;
+    
+}
+
+h3,p{
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.26);
+}
+
+/* header */
+header {
+    height: 10vh;
+    width: auto;
+    background:whitesmoke;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+header div{
+    display: flex;
+    align-items:center;
+    width:40vw;
+
+}
+
+div img{
+    width: 7vw;
+    height: 7vh;
+    margin-right: 1%;
+}
+/* nav */
+nav a{
+    
+    margin-right: 2vw;
+    font-weight:bolder;
+    font-size:4vh;
+    font-style:italic;
+    color:#333;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.26);
+}
+
+nav a:hover{
+    color:#1B57A6;
+    text-shadow: 0 0 0.01px #1B57A6;
+}
+.active{
+    color:#1B57A6;
+}
+/* icon nav */
+.icon{
+    width:10vw;
+}
+
+/* section 1 */
+
+section:nth-child(1){
+    background:  linear-gradient(359deg, #0000004d, transparent),url('/img/DroneV4-en-tete.jpeg')  no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+
+section:nth-child(1) h2{
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.26);
+    padding-top:37vh;
+    padding-right: 2vw;
+    color: white;
+    text-align:end;
+    font-size: 16vh;
+    font-weight: 400;
+    animation: linear move 2s;
+}
+section:nth-child(2){
+    height: 55vh;
+    background: #ddd;
+    display: flex;
+}
+section:nth-child(2) article:nth-child(1){
+    width:50vw;
+    display: flex;
+}
+section:nth-child(2) article:nth-child(1){
+    background: #1B57A6;
+    background-image:linear-gradient(360deg, #ffffff38, transparent);
+}
+
+section:nth-child(2) article:nth-child(1)  p{
+    padding-left: 1vw;
+    text-shadow: none;
+    text-align:start;
+    font-size: 12vh;
+    font-weight: 400;
+    animation: linear move 2s;
+}
+section:nth-child(2) article:nth-child(1)  a {
+    position: relative;
+    top: 40vh;
+    font-size: 3vh;
+    font-weight:500;
+    color:white;
+    height: 6vh;
+    border: solid 2px white;
+    padding: 5px 15px 5px 15px ;
+    border-radius: 30px;
+    cursor: pointer;
+}
+section:nth-child(2) article:nth-child(1)  a:hover{
+    color:#1B57A6;
+    background: white;
+}
+section:nth-child(2) article:nth-child(2){
+    background: linear-gradient(39deg, #2617175e, transparent), 
+    url('/img/drone-paysagiste-une.jpeg');
+    background-size: cover;
+    width:50vw;
+}
+section:nth-child(2) article:nth-child(2) p {
+    padding-left: 1vw;
+    text-align:start;
+    font-size: 12vh;
+    font-weight: 500;
+    animation: linear move 2s;
+}
+
+
+section:nth-child(3){
+    background:  url('/img/montagne.jpg') fixed no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+}
+section:nth-child(3) h2{
+    text-shadow: 0 4px 0 rgba(0, 0, 0, 0.26);
+    text-align: center;
+    font-weight: 600;
+    font-size: 10vh;
+    color: white;
+    font-size:xx-large;
+    padding: 1em;
+    animation: linear move 2s;
+}
+section:nth-child(3) h2 span{
+    color:#1B57A6 ;
+}
+
+section:nth-child(3) article{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+    animation: linear move 2s;
+}
+
+figure{
+    width: 20%;
+}
+figure img{
+    overflow: hidden;
+    width: 100%;
+    height: 22vh;
+    background: linear-gradient(297deg, #ffffff57, #ffffff94);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+figcaption div {
+    opacity: 0;
+    position: relative;
+    bottom: 4.6vh;
+    height: 4vh;
+    width: 100%;
+    text-align:center;
+    background-color:#1B57A6;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+figcaption h3{
+    font-weight: 600;
+    font-size: x-large;
+}
+figcaption p{
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.26);
+    font-weight: 600;
+    font-size: xx-large;
+    color:#1B57A6;
+} 
+figure:hover figcaption div{
+    opacity: 1;
+    
+}
+
+
+
+footer{
+    height: 25vh;
+    background: #0F3759;
+    background-image: linear-gradient(360deg, #ffffff38, transparent);
+    text-shadow: 0 0 5px black;
+}
+footer aside{
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+footer aside a{
+    margin-right: 4vw;
+    color: white;
+    font-size:large;
+    font-weight: 400;
+}
+footer p{
+    text-shadow: 0 0 5px black;
+    font-size:large;
+    font-weight: 400;
+}
+
+
+
+@keyframes move{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
